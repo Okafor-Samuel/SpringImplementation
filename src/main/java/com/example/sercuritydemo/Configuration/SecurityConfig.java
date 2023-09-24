@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
                         authorizationManagerRequestMatcherRegistry.requestMatchers(
-                                "/api/v1/authentication/**"
+                                "/api/v1/register/**"
                         ).permitAll()
                 )
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
